@@ -7,7 +7,7 @@
     // document click eventleri
     document.addEventListener('click', function (e) {
       console.log(e.target);
-    }
+    },false);
 
     document.addEventListener('click', function (e) {
       if (e.target.matches('li')) {
