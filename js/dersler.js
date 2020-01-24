@@ -5,6 +5,9 @@
     var ilk = 1;
 
     // document click eventleri
+    document.addEventListener('click', function (e) {
+      console.log(e.target);
+    }
 
     document.addEventListener('click', function (e) {
       if (e.target.matches('li')) {
@@ -52,7 +55,7 @@
           ilk = ilk + 1;
         }
       },
-      3000);
+      1000);
 
     /*JS FOR SCROLLING THE ROW OF THUMBNAILS*/
     $(document).ready(function () {
