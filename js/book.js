@@ -13,14 +13,6 @@ var Books = (function() {
 				$bookview = $parent.find( 'button.bk-bookview' ),
 				$content = $page.children( 'div.bk-content' ), current = 0;
 
-			// dışarı tıklanırsa bookviewı kapat:
-			$('body').click(function(e){
-				if (e.target.id !== 'bookbutton') {
-					$bookview.removeClass( 'bk-active' );
-					$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
-				}
-			});
-
 			$parent.find( '.bk-front' ).on( 'click', function() {				
 				
 				$bookview.removeClass( 'bk-active' );
