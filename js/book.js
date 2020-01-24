@@ -101,16 +101,3 @@ var Books = (function() {
 	return { init : init };
 
 })();
-
-document.addEventListener('click', function (e) {
-	  console.log(e); // mouse click event
-	  console.log(e.toElement); // element
-	  console.log(e.toElement.id); // element id
-	if (e.target.matches('li')) {
-
-	  frame.src = "books/" + e.toElement.id + "/index.html";
-	  if (sidebar.classList.contains("mobile")) {
-		sidebar.style.display = "none";
-	  }
-
-	},false);
