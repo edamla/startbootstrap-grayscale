@@ -287,17 +287,6 @@
       Books.init();
 
     });
-
-    document.addEventListener('click', function (e) {
-	  console.log(e); // mouse click event
-	  console.log(e.toElement); // element
-	  console.log(e.toElement.id); // element id
-	    if (!e.target.matches('bookbutton')) {
-        $bookview.removeClass( 'bk-active' );
-      if( $book.data( 'flip' ) ) {
-                $book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
-          }}
-    });
   </script>
 
 </body>

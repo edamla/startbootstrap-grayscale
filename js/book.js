@@ -6,6 +6,15 @@ var Books = (function() {
 
 		$books.each( function() {
 			
+			$('body').click(function(e){
+				if (!e.target.id == 'bookbutton') {
+					$bookview.removeClass( 'bk-active' );
+					if( $book.data( 'flip' ) ) {
+						$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
+					}
+				}
+			});
+			
 			var $book = $( this ),
 				$other = $books.not( $book ),
 				$parent = $book.parent(),
@@ -29,6 +38,7 @@ var Books = (function() {
 				}
 					
 			} );
+
 			$parent.find( '.bk-back' ).on( 'click', function() {				
 				
 				$bookview.removeClass( 'bk-active' );
