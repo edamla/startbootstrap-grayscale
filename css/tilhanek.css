@@ -1,0 +1,62 @@
+.body-bg {
+    background-color: #f3f3f3;
+}
+
+.nav-link {
+    color: #161616 !important;
+    font-size: large !important;
+}
+
+.giris {
+    padding-top: 6rem;
+    background-color: #f3f3f3;
+}
+
+.yazar {
+    background-color: #f3f3f3;
+}
+
+.magaza-buton {
+    color: white;
+    background-color: #127ecf;
+}
+
+.magaza-buton:hover {
+    background-color: #0c5a95;
+}
+
+.text-white-250 {
+    color: #1e2127;
+}
+
+.text-white-2500 {
+    color: #27292e;
+    font-size: 20px;
+}
+
+.fontlu {
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+    .img-fluid {
+        max-height: 250px;
+    }
+
+    .fontlu {
+        font-size: 35px;
+    }
+}
+.img-fluid{
+    border-radius: 30px;
+}
+
+.Grid{
+    margin-top: 120px;
+}
+
+.giris-baslik{
+    z-index: 99999;
+}

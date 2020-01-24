@@ -66,3 +66,10 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+
+
+## EKLENENLER
+
+3D Kitap Yapısı - https://tympanus.net/codrops/2013/01/08/3d-book-showcase/
+
+Responsive Youtube eklentisi - https://codepen.io/derwinsadiwa/pen/obbjdx

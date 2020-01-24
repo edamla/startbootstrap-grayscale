@@ -6,14 +6,13 @@
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: #ebe9e9;
+  z-index: 999999;
 }
 
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -27,7 +26,7 @@
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+  color: fade(rgb(0, 0, 0), 80%);
   outline: none;
   background-color: transparent;
 }
@@ -42,17 +41,12 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    background-color: #fff;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #161616;
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -140,7 +134,6 @@
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
   font-size: 80%;
-  text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
 }
@@ -164,7 +157,6 @@
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
 .about-section p {
@@ -205,9 +197,9 @@
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 
@@ -228,7 +220,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #127ecf;
 }
 
 .contact-section .card h4 {
@@ -267,8 +259,9 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'Solway', serif;
   letter-spacing: 0.0625em;
+  background-color: #00b1e4;
 }
 
 a {
@@ -281,7 +274,7 @@ a:focus, a:hover {
 }
 
 .bg-black {
-  background-color: #161616 !important;
+  background-color: #161616;
 }
 
 .bg-primary {

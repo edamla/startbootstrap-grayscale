@@ -18,7 +18,7 @@
   .navbar-nav {
     .nav-item {
       &:hover {
-        color: fade(white, 80%);
+        color: fade(rgb(0, 0, 0), 80%);
         outline: none;
         background-color: transparent;
       }
