@@ -281,23 +281,22 @@
 
   <script src="js/modernizr.custom.js"></script>
   <script src="js/book.js"></script>
-  <script>
-    document.addEventListener('click', function (e) {
-	  console.log(e); // mouse click event
-	  console.log(e.toElement); // element
-	  console.log(e.toElement.id); // element id
-	    if (e.target.matches('li')) {
-      frame.src = "books/" + e.toElement.id + "/index.html";
-      if (sidebar.classList.contains("mobile")) {
-      sidebar.style.display = "none";
-      }
-    }
-    });
-  
+  <script> 
     $(function () {
 
       Books.init();
 
+    });
+
+    document.addEventListener('click', function (e) {
+	  console.log(e); // mouse click event
+	  console.log(e.toElement); // element
+	  console.log(e.toElement.id); // element id
+	    if (!e.target.matches('bookbutton')) {
+        $bookview.removeClass( 'bk-active' );
+      if( $book.data( 'flip' ) ) {
+                $book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
+          }}
     });
   </script>
 
