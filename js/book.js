@@ -113,4 +113,4 @@ document.addEventListener('click', function (e) {
 		sidebar.style.display = "none";
 	  }
 
-	}
+	},false);
