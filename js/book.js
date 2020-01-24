@@ -17,9 +17,7 @@ var Books = (function() {
 			$('body').click(function(e){
 				if (e.target.id !== 'bookbutton') {
 					$bookview.removeClass( 'bk-active' );
-					if( $book.data( 'flip' ) ) {
-						$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
-					}
+					$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
 				}
 			});
 
