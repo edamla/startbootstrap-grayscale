@@ -7,7 +7,7 @@ var Books = (function() {
 		$books.each( function() {
 			
 			$('body').click(function(e){
-				if (!e.target.id == 'bookbutton') {
+				if (e.target.id !== 'bookbutton') {
 					$bookview.removeClass( 'bk-active' );
 					if( $book.data( 'flip' ) ) {
 						$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
