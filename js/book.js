@@ -5,7 +5,15 @@ var Books = (function() {
 	function init() {
 
 		$books.each( function() {
-			
+						
+			var $book = $( this ),
+				$other = $books.not( $book ),
+				$parent = $book.parent(),
+				$page = $book.children( 'div.bk-page' ),
+				$bookview = $parent.find( 'button.bk-bookview' ),
+				$content = $page.children( 'div.bk-content' ), current = 0;
+
+			// dışarı tıklanırsa bookviewı kapat:
 			$('body').click(function(e){
 				if (e.target.id !== 'bookbutton') {
 					$bookview.removeClass( 'bk-active' );
@@ -14,13 +22,6 @@ var Books = (function() {
 					}
 				}
 			});
-			
-			var $book = $( this ),
-				$other = $books.not( $book ),
-				$parent = $book.parent(),
-				$page = $book.children( 'div.bk-page' ),
-				$bookview = $parent.find( 'button.bk-bookview' ),
-				$content = $page.children( 'div.bk-content' ), current = 0;
 
 			$parent.find( '.bk-front' ).on( 'click', function() {				
 				
