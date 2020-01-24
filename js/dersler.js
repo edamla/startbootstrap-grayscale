@@ -5,11 +5,11 @@
     var ilk = 1;
 
     // document click eventleri
-    document.addEventListener('click', function (e) {
-        console.log(e); // mouse click event
-        console.log(e.toElement); // element
-        console.log(e.toElement.id); // element id
-    },false);
+    // document.addEventListener('click', function (e) {
+    //     console.log(e); // mouse click event
+    //     console.log(e.toElement); // element
+    //     console.log(e.toElement.id); // element id
+    // },false);
 
     document.addEventListener('click', function (e) {
       if (e.target.matches('li')) {
