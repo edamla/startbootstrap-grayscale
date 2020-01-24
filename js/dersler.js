@@ -6,7 +6,9 @@
 
     // document click eventleri
     document.addEventListener('click', function (e) {
-      console.log(e.target);
+        console.log(e); // mouse click event
+        console.log(e.toElement); // element
+        console.log(e.toElement.id); // element id
     },false);
 
     document.addEventListener('click', function (e) {
@@ -19,9 +21,7 @@
           sidebar.style.display = "none";
         }
 
-      }
-
-      if (e.target.matches('#button')) {
+      } else if (e.target.matches('#button')) {
         //console.log(e); // mouse click event
         //console.log(e.toElement); // element
         //console.log(e.toElement.id); // element id
@@ -34,6 +34,10 @@
           sidebar.style.display = "none";
           sidebar.classList.remove('mobile');
         }
+      }
+      else {
+        sidebar.style.display = "none";
+        sidebar.classList.remove('mobile');
       }
 
     }, false);
