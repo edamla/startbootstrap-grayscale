@@ -181,6 +181,7 @@ body {
   @media(max-width:1280px) {
     .toggle {
       display: block !important;
+      padding-bottom: 10px;
     }
 
     .sidebar {
@@ -207,7 +208,6 @@ body {
   @media(min-width:1280px) {
     .toggle {
       display: none !important;
-      padding-bottom: 10px;
     }
 
     .sidebar {
